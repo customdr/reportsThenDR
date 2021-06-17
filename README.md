@@ -41,7 +41,7 @@ You will need to update the relevant fields in the JSON file:
 ```
 
 # Powershell Data Retention Script
-The RBC_Dataretention.ps1 script does the following:
+The dataretention.ps1 script does the following:
 -	Based on criteria defined in the config file, locks scans that need to be preserved.
 -	Generates and downloads PDF reports for scans that will be deleted.
 -	Initiates the data retention process.
@@ -62,14 +62,14 @@ Verbose output.
 ## Examples
 Here’re a few example runs:
 
-`>.\RBC_Dataretention.ps1 -v `
+`>.\dataretention.ps1 -v `
 
 This will run the script in dry-run mode, with verbose output.
 
-`>.\RBC_Dataretention.ps1 -v -exec`
+`>.\dataretention.ps1 -v -exec`
 
 This will generate backup PDF reports, and then execute the data retention process on the manager, with verbose output.
 
-`>.\RBC_Dataretention.ps1 -v -exec -noreports`
+`>.\dataretention.ps1 -v -exec -noreports`
 
 This will run the data retention on the manager, with verbose output. No backup PDF reports will be generated. Use this ONLY if you do NOT want PDF reports generated.
