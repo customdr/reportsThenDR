@@ -1,6 +1,12 @@
 # Goal
 Custom data retention based on custom criteria provided by configuration.
 
+Generates PDF reports of scans that will be removed, prior to running data retention.
+
+**By default, the script runs in dry run mode – and does not run DR. This is a fail-safe to prevent accidentally deleting data.**
+
+*To actually run DR, the -exec parameter needs to be explicitly provided.*
+
 # Pre-Requisites
 -	Powershell V5 (Ex. Windows 10 has powershell 5.1 installed). https://docs.microsoft.com/en-us/powershell/scripting/install/installing-windows-powershell?view=powershell-6
 -	The custom data retention script talks to the Checkmarx database. The powershell script uses the “Invoke-SqlCmd2” module for database functionality. To install the module, execute “Install-Module -Name Invoke-SqlCmd2” in an admin powershell window.
