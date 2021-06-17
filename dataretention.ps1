@@ -705,7 +705,7 @@ Class DataRetention {
 # ============ Execution Entry ============= #
 # ========================================== #
 
-[PSCustomObject] $config = [Config]::new(".\rbc_data_retention_config.json").GetConfig()
+[PSCustomObject] $config = [Config]::new(".\data_retention_config.json").GetConfig()
 
 # Override config from command line params, if provided
 if ($dbUser) { $config.cx.db.username = $dbUser }
