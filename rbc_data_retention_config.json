@@ -1,0 +1,23 @@
+{
+    "log": {
+        "timeFormat" : "R"
+    },
+    "cx": {
+        "host" : "http(s)://YOUR_CHECKMARX_SERVER",
+        "username" : "CHECKMARX_SERVICE_ACCOUNT",
+        "password" : "CHECKMARX_SERVICE_ACCOUNT_PASSWORD",
+        "db": {
+            "instance": "YOUR_SQLSERVER\\INSTANCE",
+            "username": "SQLSERVER_ACCOUNT",
+            "password": "SQLSERVER_PASSWORD"
+        }
+    },
+    "reports": {
+        "nParallel": 10,
+        "folder": "c:\\temp\\cx_reports"
+    },
+    "dataRetention": {
+        "daysToRetain" : 365,
+        "durationLimitHours" : 4
+    }
+}
